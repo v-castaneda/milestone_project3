@@ -11,8 +11,8 @@ const app = express()
 app.use(methodOverride('_method'))
 app.use(express.urlencoded({extended: true}))
 app.use(express.static('public'))
-app.set('view engine', 'jsx')
-app.engine('jsx', require('express-react-views').createEngine())
+// app.set('view engine', 'jsx')
+// app.engine('jsx', require('express-react-views').createEngine())
 
 // user routes
 const usersController = require('./controllers/users_controller.js')
